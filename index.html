@@ -4,12 +4,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Portfolio Project</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <p>Ui/UX Designer</p>
+        <h1>Hi, I'm <span>Kevin</span><br> Jen from Australia</h1>
+      </div>
+    </div>
+  </div>
+<!-- ---------- About ---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" />
+        </div>
+
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac leo sit amet dolor dictum convallis. Vivamus iaculis urna in venenatis ultrices. Fusce eu tellus nec dui hendrerit sagittis. Ut sapien arcu, semper sit amet tempus vel, euismod nec erat. Suspendisse viverra egestas tortor sed aliquet. Nam ut nisi sed.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
